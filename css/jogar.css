@@ -1,0 +1,59 @@
+
+/* Estiliza o corpo da página */
+body {
+    background-color: #f0f8ff; 
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+   
+}
+
+/* Estilo do container central */
+.container {
+    text-align: center; 
+    max-width: 400px; 
+    padding: 20px;
+    background-color: white; 
+    border-radius: 10px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilo do título */
+h1 {
+    font-size: 2.5rem; 
+    color: #0829e4d2; 
+    margin-bottom: 30px;
+}
+
+/* Estilo para os botões */
+.btn {
+    font-size: 1.2rem; 
+    padding: 15px; 
+    margin: 10px 0; 
+    width: 100%; 
+    border-radius: 8px; 
+}
+
+/* Estilo específico para o botão "Clássico" */
+.btn-classic {
+    background-color: #4caf50; 
+    color: white; 
+}
+
+/* Estilo específico para o botão  */
+.btn-timer {
+    background-color: #ff9800;
+    color: white; 
+}
+
+/* Estilo específico para o botão "Zen" */
+.btn-zen {
+    background-color: #3f51b5; 
+    color: white; 
+}
+
+/* Efeito de hover para os botões */
+.btn:hover {
+    opacity: 0.9; /* Reduz a opacidade para 90% quando o mouse passa sobre o botão, criando um efeito visual */
+}

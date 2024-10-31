@@ -1,0 +1,111 @@
+/* Estilos adicionais para centralizar o tabuleiro */
+body {
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    margin: 0; 
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Estilo do contêiner do tabuleiro */
+.board-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px; 
+}
+
+/* Estilo da tabela */
+table {
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+/* Estilo das células da tabela */
+td {
+    width: 80px; 
+    height: 80px; 
+    border: 2px solid #007bff; 
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 30px; 
+    font-weight: bold; 
+    color: #333; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Estilo ao passar o mouse sobre as células */
+td:hover {
+    background-color: #e7f0ff; 
+    transform: scale(1.05); 
+}
+
+/* Estilo para espaços vazios */
+td[style*="opacity: 0"] {
+    background-color: transparent; 
+}
+
+/* Estilo do Modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Estilo do conteúdo do Modal */
+.modal-content {
+    background-color: #fff; 
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px; 
+    width: 80%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: center; 
+}
+
+/* Estilo do título do modal */
+.modal-content h1 {
+    margin-bottom: 20px; 
+    color: #333; 
+}
+
+/* Estilo dos botões no modal */
+.modal-buttons {
+    display: flex; 
+    justify-content: center; 
+    gap: 10px; 
+}
+
+/* Estilo dos botões */
+.modal-buttons button,
+.modal-buttons a {
+    background-color: #28a745; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-decoration: none; 
+    transition: background-color 0.3s; 
+}
+
+/* Estilo ao passar o mouse sobre os botões */
+.modal-buttons button:hover,
+.modal-buttons a:hover {
+    background-color: #218838;
+}

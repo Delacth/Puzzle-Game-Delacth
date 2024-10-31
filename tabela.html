@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    
+    <title>Classificação - Delacth Game</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body  onload="aplicarCorFundo()">
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Pontuações</h1>
+
+        <!-- Tabela Modo Clássico -->
+        <div class="card mb-4">
+            <div class="card-header text-center">
+                <h2>Modo Clássico</h2>
+            </div>
+            <div class="card-body">
+                <table class="table table-bordered table-striped text-center tabela-classico">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Nome do Jogador</th>
+                            <th>Movimentos</th>
+                            <th>Tempo (segundos)</th>
+                            
+                        </tr>
+                    </thead>
+                    <tbody id="classico-body">
+                        <!-- Os dados dos jogadores  -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+<!-- Tabela Modo Contra-Relógio -->
+<div class="card">
+    <div class="card-header text-center">
+        <h2>Modo Contra-Relógio</h2>
+    </div>
+    <div class="card-body">
+        <table class="table table-bordered table-striped text-center tabela-crelogio">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Nome do Jogador</th>
+                    <th>Tempo (segundos)</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="crelogio-body">
+                <!-- Os dados dos jogadores-->
+            </tbody>
+        </table>
+    </div>
+</div>
+        <!-- Botão Voltar -->
+        <div class="text-center mt-4">
+            <a href="/telapricipal.html" class="btn btn-secondary">Voltar</a>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tabela.js"></script>
+    <script src="/js/tema.js"></script>
+        
+</body>
+</html>

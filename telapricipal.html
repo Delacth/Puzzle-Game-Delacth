@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delacth Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="/css/style.css">   
+
+    
+</head>
+<body onload="aplicarCorFundo()" class="bodyShow">
+
+    <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="text-center container-custom">
+            <!-- Título -->
+            <h1>Puzzle Delacth</h1>
+    
+            <!-- Botões em Bloco -->
+            <div class="d-grid gap-3 col-12 mx-auto mt-4">
+                <a href="/jogar.html" class="btn btn-primary btn-lg">Jogar</a>
+                <a href="/tabela.html" class="btn btn-secondary btn-lg">Classificação</a>
+                <div class="dropdown mt-3">
+                    
+                    <!-- Botão Escolher Cor de Fundo -->
+                    <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Escolher Cor de Fundo
+                    </button>
+
+                    <!-- Opções de cores -->
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><button class="dropdown-item" onclick="alterarCorFundo('#ffffff')">Branco</button></li>
+                        <li><button class="dropdown-item" onclick="alterarCorFundo('#87CEEB')">Azul</button></li> <!-- Azul -->
+                        <li><button class="dropdown-item" onclick="alterarCorFundo('#e6e6fa')">Lavanda</button></li> <!-- Lavanda -->
+                        <li><button class="dropdown-item" onclick="alterarCorFundo('#D3D3D3')">Cinza Claro</button></li> <!-- Novo Contraste -->
+                    </ul>
+                </div>
+                
+                <!-- Botão Sair -->
+                <button type="button" class="btn btn-danger btn-lg" id="sairButton">Sair</button>
+            </div>    
+        </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jogador.js"></script> 
+    <script src="/js/tema.js"></script>
+</body>
+</html>

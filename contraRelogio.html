@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+
+    <title>Contra o Relógio - Delacth Game</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <link rel="stylesheet" href="css/classic.css">  
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body  onload="aplicarCorFundo()">
+
+   
+    <h1 class="text-center my-4">Modo Contra Relógio</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid justify-content-between">
+            <div class="d-flex align-items-center" id="menu-container">
+                <select class="form-select me-3" id='select'>
+                    <option value="3">Easy - 5 min</option>
+                    <option value ="4">Medium - 10 min</option>
+                    <option value = "5">Hard - 20 min</option>
+                </select>
+                <input type="button" value="Play" class="item btn btn-success" id="play">
+                <button id="restart-btn" class="btn btn-warning ms-2">Reiniciar</button>
+                <a href="jogar.html" class="btn btn-secondary ms-2">Sair</a>
+            </div>
+            <div class="d-flex align-items-center m-2">
+                <p id="move-count" class="me-4">Toques: 0</p> 
+                <p id="timer">Tempo: 0s</p>
+            </div>
+        </div>
+    </nav>
+ 
+    <div class="board-container" id="board-container">     
+    </div> 
+
+    <!-- Modal para exibir mensagem de vitória -->
+    <div id="win-modal" class="modal">
+        <div class="modal-content">
+            <h1>Ganhou!</h1>
+            <div class="modal-buttons">
+                <button id="win-save-btn" class="btn btn-primary">Salvar Dados</button>
+                <button id="win-restart-btn" class="btn btn-warning">Reiniciar</button>
+                <a href="jogar.html" class="btn btn-danger">Sair</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para exibir mensagem de derrota -->
+    <div id="lose-modal" class="modal">
+        <div class="modal-content">
+            <h1>Tempo Acabou!</h1>
+            <div class="modal-buttons">
+                <button id="lose-save-btn" class="btn btn-primary">Salvar Dados</button>
+                <button id="lose-restart-btn" class="btn btn-warning">Reiniciar</button>
+                <a href="index.html" class="btn btn-danger">Sair</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/contraTempo.js"></script>
+    <script src="js/jogador.js"></script>
+    <script src="/js/tema.js"></script>
+</body>
+</html>

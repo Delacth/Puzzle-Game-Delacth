@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Bubbles&display=swap" rel="stylesheet">
+    
+    <title>Modo Zen - Delacth Game</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/classic.css"> 
+    <link rel="stylesheet" href="/css/style.css">    
+    <style>
+        
+    </style>
+</head>
+<body  onload="aplicarCorFundo()">
+
+    <!-- Título Centralizado -->
+    <h1 class="text-center my-4">Modo Zen</h1>
+
+    <!-- Navbar com Seleção de Dificuldade e Botão Play -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+        <div class="container-fluid justify-content-between">
+            <div class="d-flex align-items-center">
+                <label for="select" class="me-2">Dificuldade:</label>
+                <select class="form-select me-3" id="select">
+                    <option value="3">Fácil</option>
+                    <option value="4">Médio</option>
+                    <option value="5">Difícil</option>
+                </select>
+                <input type="button" value="Play" class="btn btn-success" id="play">
+                <button id="restart-btn" class="btn btn-warning ms-2">Reiniciar</button>
+                <a href="jogar.html" class="btn btn-secondary ms-2">Sair</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Tabuleiro do Puzzle -->
+    <div class="board-container" id="board-container"></div> 
+    <div id="puzzle-solved-modal" class="modal">
+        <div class="modal-content">
+            <h1>Puzzle Resolvido!</h1>
+            <div class="modal-buttons">
+                <button id="modal-restart-btn">Reiniciar</button> 
+                <a href="jogar.html">Sair</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/modozen.js"></script>
+    <script src="/js/tema.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+
+*{
+    font-family: 'DynaPuff', cursive;
+}
+/* Background Azul*/
+.bodyShow{
+    background-color: #87CEEB;
+    
+}
+
+/* Estilos da tela */
+.view{
+    height: 100vh;
+    
+}
+/* Estilos de cabeçalho */
+h1{
+    color: #00008B;
+    
+}
+
+/* Estilos do formulário */
+.container-custom {
+    border: 4px solid #00008B; 
+    border-radius: 15px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2); 
+    max-width: 600px;
+    margin: auto; 
+}
+
+/* Botões personalizados */
+.btn-lg {
+    border-radius: 25px;
+    padding: 15px 30px; 
+    font-size: 1.25rem; 
+}
+
+/* Estilo da dropdown */
+.dropdown-menu {
+    border-radius: 10px; /* Bordas arredondadas para o dropdown */
+}
+
+/* Estilo dos itens da dropdown */
+.dropdown-item {
+    transition: background-color 0.3s; /* Transição suave */
+}
+.dropdown-item:hover {
+    background-color: #d1e7dd; 
+}
